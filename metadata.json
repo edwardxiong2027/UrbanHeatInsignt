@@ -1,0 +1,5 @@
+{
+  "name": "Urban Heat Predictor",
+  "description": "An interactive data visualization platform exploring the relationship between impervious surface growth and urban heat island intensity across major U.S. cities.",
+  "requestFramePermissions": []
+}
