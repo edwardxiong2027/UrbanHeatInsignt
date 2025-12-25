@@ -1,10 +1,23 @@
 
 import React, { useState } from 'react';
+import { initializeApp } from 'firebase/app';
 import { CITIES } from './constants';
 import PredictiveScatter from './components/PredictiveScatter';
 import GlobalComparison from './components/GlobalComparison';
 import RegressionMatrix from './components/RegressionMatrix';
 import AIAssistant from './components/AIAssistant';
+
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyCXEtq0ubgtXIbb7s_JzoWt8daNejKwuLQ',
+  authDomain: 'mindmap-9f454.firebaseapp.com',
+  projectId: 'mindmap-9f454',
+  storageBucket: 'mindmap-9f454.firebasestorage.app',
+  messagingSenderId: '582191293462',
+  appId: '1:582191293462:web:32b1e4b76fff6443538137',
+};
+
+const app = initializeApp(firebaseConfig);
 
 const App: React.FC = () => {
   const [selectedCity, setSelectedCity] = useState(CITIES[0]);
